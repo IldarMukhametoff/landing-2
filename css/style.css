@@ -91,10 +91,8 @@ body{
 	padding: 230px 0 0 0;
 	z-index: 1;
 }
-.header__slider{
-	max-width: 780px;
-}
 .header__slider__item{
+	max-width: 780px;
 	text-align: center;
 	margin: 0 auto;
 }
@@ -263,5 +261,11 @@ body{
 	.header__description{
 		font-size: 12px;
 		line-height: 14px;
+	}
+}
+
+@media(max-height: 500px){
+	.header__slider .slick-dots{
+		padding: 20px 0 0 0;
 	}
 }
