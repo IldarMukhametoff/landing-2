@@ -248,7 +248,8 @@ body{
 		font-size: 24px;
 	}
 	.header__description{
-		line-height: 18px;
+		font-size: 12px;
+		line-height: 12px;
 	}
 }
 @media(max-width: 480px){
