@@ -84,19 +84,20 @@ body{
 	font-weight: 900;
 }
 .header__link:hover{
-	color
+	color: #00e0d0;
 }
 .header__body{
 	position: relative;
 	padding: 230px 0 0 0;
 	z-index: 1;
 }
-.header__slider__item{
+.header__slider-item{
 	max-width: 780px;
+	flex:  0 1 780px;
 	text-align: center;
 	margin: 0 auto;
 }
-.title__main{
+.title-main{
 	font-family: "Playfair Display";
 	font-weight: 700;
 	font-size: 22px;
@@ -118,7 +119,7 @@ body{
 	color: #413d4b;
 	line-height: 22px;
 }
-.header__title__main{
+.header__title-main{
 	font-weight: 900;
 	font-size: 32px;
 	color: #fff;
@@ -128,13 +129,15 @@ body{
 	line-height: 24px;
 }
 .btn{
+	font-family: "Hammersmith One";
 	display: inline-block;
 	color: #00e0d0;
 	border: 1px solid #00e0d0;
 	padding: 12px 24px;
 	border-radius: 2px;
+	text-transform: uppercase;
 }
-.header__slider__item__btn{
+.header__slider-item__btn{
 	margin: 53px 0 0 0;
 }
 .header__slider .slick-list{
@@ -163,6 +166,25 @@ body{
 }
 .header__slider .slick-dots li.slick-active button{
 	background: #00e0d0;
+}
+.about__content{
+	padding: 70px 0 70px 60px;
+	display: flex;
+	justify-content: space-between;
+}
+.about__image{
+	flex: 0 1 75%;
+	margin: 0 100px 0 0;
+}
+.about__image img{
+	max-width: 100%;
+}
+.about__title{
+	margin: 0 0 28px 0;
+}
+.about__description p{
+	margin: 0 0 31px 0;
+	text-align: justify;
 }
 @media(max-width: 767px){
 	.header__burger{
@@ -242,26 +264,48 @@ body{
 		width: 15px;
 	  	height: 15px;
 	}
+	.about__content {
+   	padding: 35px 0 35px 30px;
+ 	}
+ 	.about__image {
+   	margin: 0 50px 0 0;
+	}
 }
 @media(max-width: 640px){
-	.header__title__main{
+	.header__title-main{
 		font-size: 24px;
 	}
 	.header__description{
 		font-size: 12px;
-		line-height: 12px;
+		line-height: normal;
+	}
+	.about__content {
+    	padding: 35px 0 35px 0px;
+	}
+	.about__image {
+    display: none;
+	}
+	.about__title{
+		text-align: center;
+	}
+	.btn-wrapper{
+		text-align: center;
 	}
 }
 @media(max-width: 480px){
 	.header__body{
 		padding: 130px 0 0 0;
 	}
-	.header__title__main{
+	.title-main{
 		font-size: 20px;
 	}
 	.header__description{
 		font-size: 12px;
 		line-height: 14px;
+	}
+	.about__description{
+		font-size: 12px;
+		line-height: 15px;
 	}
 }
 
