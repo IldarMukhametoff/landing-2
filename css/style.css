@@ -311,7 +311,7 @@ body{
 
 @media(max-height: 500px){
 	.header__body{
-		padding: 100px 0 0 0;
+		padding: 0px 0 0 0;
 	}
 	.header__slider .slick-dots{
 		padding: 20px 0 0 0;
