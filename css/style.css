@@ -51,7 +51,7 @@ body{
 	background-size: cover;
 	padding: 15px 0 70px;
 }
-.header:before{
+.overlay:before{
 	content: '';
 	position: absolute;
 	top: 0;
@@ -97,15 +97,19 @@ body{
 	text-align: center;
 	margin: 0 auto;
 }
-.title-main{
+.title{
 	font-family: "Playfair Display";
+}
+.title-main{
 	font-weight: 700;
 	font-size: 22px;
 	color: #413d4b;
-	position: relative;
-
+	text-transform: uppercase;
 }
-
+.subtitle{
+	font-size: 14px;
+	color: #2f2d35;
+}
 .title_line:after{
 	content: "";
 	display: block;
@@ -123,6 +127,7 @@ body{
 	font-weight: 900;
 	font-size: 32px;
 	color: #fff;
+	text-transform: capitalize;
 }
 .header__description{
 	color: #fff;
@@ -185,6 +190,86 @@ body{
 .about__description p{
 	margin: 0 0 31px 0;
 	text-align: justify;
+}
+.about__video{
+	position: relative;
+	width: 100%;
+	height: 50vh;
+	background: url('../img/about/about_bg.jpg') center no-repeat;
+	background-size: cover;
+}
+.about__link{
+	position: relative;
+	z-index: 2;
+
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.about__img{
+	display: flex;
+	width: 94px;
+	height: 94px;
+	border: 3px solid #fff;
+	border-radius: 50%;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto 34px ;
+
+}
+.about__sign{
+	color: #fff;
+	font-size: 16px;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+.expertise__body{
+	padding: 71px 0 104px;
+}
+.expertise__title{
+	text-align: center;
+}
+.expertise__subtitle{
+	margin: 16px 0 0 0;
+}
+.expertise__title:after{
+	background: #c6c4c9;
+	margin: 18px auto 84px;
+}
+.expertise__row{
+	display: flex;
+	padding: 0 0 40px 0;
+	margin: 44px 0 0 0;
+	border-bottom: 1px solid #ebebeb;
+}
+.expertise__row:last-child{
+	display: flex;
+	margin: 44px 0 0 0;
+	border-bottom: none;
+}
+.expertise__column{
+	flex: 0 0 33.333%;
+	justify-content: space-between;
+	padding: 0 31px;
+}
+.item-expertise{
+	text-align: center;
+}
+.item-expertise__icon{
+	width: 50px;
+	height: 50px;
+	margin: 0 auto 34px;
+}
+.item-expertise__title{
+	font-weight: 900;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+.item-expertise__text{
+	font-size: 14px;
+	line-height: 22px;
 }
 @media(max-width: 767px){
 	.header__burger{
@@ -270,6 +355,13 @@ body{
  	.about__image {
    	margin: 0 50px 0 0;
 	}
+	.expertise__column{
+		padding: 0 15px;
+	}
+	.item-expertise__text{
+		font-size: 12px;
+
+	}
 }
 @media(max-width: 640px){
 	.header__title-main{
@@ -290,6 +382,21 @@ body{
 	}
 	.btn-wrapper{
 		text-align: center;
+	}
+	.expertise__title:after{
+		margin: 18px auto 44px;
+	}
+	.expertise__row{
+		flex-direction: column;
+		align-items: center;
+	}
+	.expertise__column{
+		flex: 0 0 0;
+		max-width: 255px;
+		margin: 0 0 30px 0 ;
+	}
+	.expertise__column:last-child{
+		margin: 0 0 0px 0 ;
 	}
 }
 @media(max-width: 480px){
